@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:amazon_clone/common/widgets/bottom_widget_bar.dart';
 import 'package:amazon_clone/constans/error_handler.dart';
 import 'package:amazon_clone/constans/global_variables.dart';
 import 'package:amazon_clone/constans/utils.dart';
@@ -73,7 +74,7 @@ class AuthService {
                 'x-auth-token', jsonDecode(res.body)['token']);
             Provider.of<UserProvider>(context, listen: false).setUser(res.body);
             Navigator.pushNamedAndRemoveUntil(
-                context, HomeScreen.routeName, (route) => false);
+                context, BottomBar.routeName, (route) => false);
           },
           context: context);
     } catch (e) {
