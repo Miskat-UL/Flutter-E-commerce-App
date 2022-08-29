@@ -11,7 +11,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:provider/provider.dart';
 
-import '../../home/home_screen.dart';
+import '../../home/screens/home_screen.dart';
 
 class AuthService {
   void signUpUser({

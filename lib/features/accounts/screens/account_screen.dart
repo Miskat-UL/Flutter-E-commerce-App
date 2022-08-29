@@ -2,6 +2,9 @@ import 'package:amazon_clone/constans/global_variables.dart';
 import 'package:amazon_clone/features/accounts/widgets/bottom_appbar.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/order_state.dart';
+import '../widgets/top_buttons.dart';
+
 class AccountScreen extends StatefulWidget {
   const AccountScreen({super.key});
 
@@ -50,7 +53,12 @@ class _AccountScreenState extends State<AccountScreen> {
         ),
       ),
       body: Column(
-        children: [const BelowAppbar()],
+        children: [const BelowAppbar(),
+        const SizedBox(height: 10),
+        const TopButtons(),
+        const SizedBox(height: 10),
+        const OrderState(),
+        ],
       ),
     );
   }
