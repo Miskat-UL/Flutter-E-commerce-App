@@ -47,11 +47,12 @@ class _OrderState extends State<OrderState> {
           height: 170,
           padding: const EdgeInsets.only(left: 10, top: 20, right: 20),
           child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: list.length,
-              itemBuilder: (context, index) {
-                return SingleProduct(image: list[index]);
-              }),
+            scrollDirection: Axis.horizontal,
+            itemCount: list.length,
+            itemBuilder: (context, index) {
+              return SingleProduct(image: list[index]);
+            },
+          ),
         ),
       ],
     );
